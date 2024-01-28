@@ -1,0 +1,16 @@
+"//write a program first string to aother sring also print the number of char in the string in c?"
+char[] array = yourStringVariable.Take(5).ToArray();
+
+
+string str = yourStringVariable.Substring(0,5);
+
+
+string firstFivChar = new string(yourStringVariable.Take(5).ToArray());
+
+
+string firstFivCharWithSubString = 
+    !String.IsNullOrWhiteSpace(yourStringVariable) && yourStringVariable.Length >= 5
+    ? yourStringVariable.Substring(0, 5)
+    : yourStringVariable;
+
+
